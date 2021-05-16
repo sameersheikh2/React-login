@@ -14,9 +14,9 @@ const handleChange = (e) => {
     }))
 }
   return (
-    <div class="card text-center mb-3 col-12 col-lg-3 login-card mt-2 hv-center">
+    <div class="card text-center mb-3 col-12 col-lg-3 login-card " style= {{margin:"auto"}}>
       <div className='h1 p-4'>Register</div>
-      <form>
+      <form class="">
         <div className="form-group mx-sm-3 mb-2 text-left">
           <label htmlFor="exampleInputEmail1">Email address</label>
           <input
@@ -44,10 +44,10 @@ const handleChange = (e) => {
           />
         </div>
         <div className="mx-sm-3 mb-2 form-group text-left">
-          <label htmlFor="exampleInputPassword1">Confirm Password</label>
+          <label htmlFor="exampleInputPassword1" required>Confirm Password</label>
           <input
             type="password"
-            className="form-control"
+            className="form-control is-invalid"
             id="confirmPassword"
             placeholder="Confirm Password"
             value={state.confirmPassword}
